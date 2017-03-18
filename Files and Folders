@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Directory.CreateDirectory("C:\\vs");
+            Directory.CreateDirectory("C:\\vs\\new_folder");
+            File.WriteAllText("C:\\vs\\new_folder\\hello.txt","O_o");
+            FileStream file1 = new FileStream("C:\\vs\\new_folder\\hello.txt", FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(file1);
+            Console.WriteLine(reader.ReadToEnd());
+            reader.Close();
+            Console.ReadLine();
+        }
+    }
+}
