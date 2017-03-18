@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string A;
+            A = "Ответ: ";
+            int B, C;
+            double D;
+            B = 5;
+            C = 2;
+            D = (double)B/C;
+            Console.WriteLine(D);
+            Console.ReadKey();
+            A = A + D.ToString();
+            Console.WriteLine(A);
+            Console.ReadKey();
+        }
+    }
+}
