@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int A, B, C, D;
+            Console.WriteLine("Введите переменные: A,B,C,D ");
+            A = int.Parse(Console.ReadLine());
+            B = int.Parse(Console.ReadLine());
+            C = int.Parse(Console.ReadLine());
+            D = int.Parse(Console.ReadLine());
+            if ( ( (A>B)&(C==D) ) | ( (D==A)&(D!=C) ) )
+            {
+                Console.WriteLine("Ок ");
+            }
+            else if ((A!=B)&(A!=C))
+            {
+                Console.WriteLine("Второй вариант");
+            }
+            else
+            {
+                Console.WriteLine("Беда");
+            }
+            Console.ReadKey();
+        }
+    }
+}
